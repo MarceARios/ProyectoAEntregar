@@ -1,0 +1,428 @@
+
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+  /* Fuente de Google Font para usar en el proyecto */
+.caacupe-one-regular {
+  font-family: "Caacupe One", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+  /* Estilos para el cuerpo del documento */
+body{
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+}
+    /* Estilos para el encabezado */
+header {
+    background-color: #640786;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}  
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    padding: 15px;
+}    
+
+  /* Estilos para la barra de navegación */
+nav ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline; /* Ajusta hacia abajo los elementos del menú */
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+
+  /* Estilos para el contenido principal */
+main  {
+    border: 1px solid #1c0202;
+    border-radius: 5px;
+    max-width: 98%;
+    margin: 5px;
+    gap: 10px;
+    padding: 10px;
+}
+    
+  /* Estilos para títulos */
+h2, h3 {
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    margin-bottom: 10px;
+}
+  /* Estilos para la sección hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hero_text {
+    color: #640786;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+}
+.hero pre {
+    font-size: 1.4rem;
+    background-color: #c3d8e4;
+    padding: 5px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.hero_image img {
+    width: 70;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+} 
+.hero_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+} 
+.hero_aside {
+    background-color: #ecc0d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.hero.ultimo_texto{
+    font-size: 1.2rem;
+    color: #640786;
+    background-color: #c3d8e4;
+    display: flex;
+    justify-content: center;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+.hero.ultimo_texto p {
+    background-color: #9d6585;
+    margin: 0 10px;
+}
+
+
+
+  /* Estilos para la galería de imágenes */
+.gallery {
+    border: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: 3px;
+    justify-content: center;
+    margin: 5px;
+}
+.gallery h3 {
+    background-color: white;
+    color: #571ac9;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.gallery-header { 
+    background-color: white;  
+    grid-column: span 2;
+    text-align: center;
+}
+.gallery-header img {
+    width: 99%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: scale-down;
+}
+.gallery div {
+    flex-grow: 1;
+    margin: 10px;
+    text-align: center;
+}
+.gallery-item {
+    background-color: #c9e8c0;
+    border: 1px solid #011003;
+    width: 200px;
+    height: 320px;
+    object-fit: cover;
+}   
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.gallery-item .description {
+    padding: 2px;
+    text-align: center;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    font-size: 0.6rem;
+}
+
+  /* Estilos para la sección de productos */
+.products {
+    background-color: #eee2e2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    /* border: 1px solid #900909; */
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+} 
+.products_text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.products_text h3 {
+    color: #640786;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.products_text img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product_box {
+    background-color: white;
+    border: 1px solid #130101;
+    width: 230px;
+    height: 340px;
+    padding: 10px;
+    border-radius: 5px;
+    object-fit: cover;
+} 
+.product_image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+ .product_box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+  /* Estilos para la sección de reseñas */
+.reviews{
+    border: 1px solid #571ac9;
+    border-radius: 5px;
+    /* display: grid; */
+    gap: 15px 10px;
+    /* gap: 1rem; */
+    /* grid-auto-flow: dense; */
+    /* grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); */
+    /* grid-template-areas: "c01 c01 c02 c02 c03"
+                         "c04 c05 c05 c05 c03"
+                         "c04 c06 c06 c07 c07"
+                         "c08 c08 c09 c09 c10"
+                         "c11 c11 c12 c12 c10";
+     */
+    margin-top: 5px;
+    padding: 1rem;
+}
+.reviews h2, h3 {
+    color: #7e3898;
+    font-family: 'Manrope', Helvetica, Arial, sans-serif;
+    gap: 1rem;
+    text-align: center;
+} 
+.review_header{
+    grid-area: c01;
+}
+.review_form{
+    background-color: lightskyblue;
+    border: 1px solid black;
+    font-size: 0.9rem;
+    grid-area: c02;
+    margin: 2px;
+}
+.checkbox{
+    font-size: 0.7rem;
+}
+.review_box{
+    border: 0.5px solid #011003;
+    display: flex;
+}
+.review_box img{
+    border-radius: 50%;
+    padding: 1rem;
+}
+.review_box p{
+    font-style: italic;
+    font-size: 0.8rem;
+}
+.review_content{
+    display: flex;
+    gap: 2rem;
+    padding: 1.2rem;
+    text-align: justify;
+}
+.review_content img{
+    width: 70px;
+}
+.review_box:nth-child(1){
+    background-color: #735e9b;
+    border: 1px solid black;
+    grid-area: c03;
+}
+.review_box:nth-child(2){
+    background-color: lightgreen;
+    border: 1px solid black;
+    grid-area: c04;
+}
+.review_box:nth-child(3){
+    background-color: #571ac9;
+    border: 1px solid black;
+    grid-area: c05;
+}
+.review_box:nth-child(4){
+    background-color: #1ac99d;
+    border: 1px solid black;
+    grid-area: c06;
+}
+.review_box:nth-child(5){
+    background-color: rgb(213, 238, 144);
+    border: 1px solid black;
+    grid-area: c07;
+}
+.review_box:nth-child(6){
+    background-color: #121212;
+    color: white;
+    border: 1px solid black;
+    grid-area: c08;
+}
+.review_box:nth-child(7){
+    background-color: rgb(238, 144, 149);
+    border: 1px solid black;
+    grid-area: c09;
+}
+.review_box:nth-child(8){
+    background-color: #bfa7eb;
+    border: 1px solid black;
+    grid-area: c10;
+}
+.review_box:nth-child(9){
+    background-color: rgb(167, 27, 34);
+    color: white;
+    border: 1px solid black;
+    grid-area: c11;
+}
+.review_box:nth-child(10){
+    background-color: #4f93d2;
+    border: 1px solid black;
+    grid-area: c12;
+}
+
+      
+  /* Estilos para el pie de página */
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    grid-template-areas:
+      "social-media adress address address"
+      "contact-info copyright copyright copyright"
+     ;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.social-media p{
+    color: white;
+    grid-area: social-media;
+    width: 170px;
+    height: auto;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+}
+.social-media a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+.adress{
+    grid-area: adress;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+/* The container dictates the aspect ratio */
+.map-container {
+  position: relative;
+  width: 100%;            /* Llena el cien por ciento de su contenedor en ancho */
+  padding-bottom: 56.25%;    /* Mantiene el ratio 16:9 en pantalla */
+  height: 0;
+  
+}
+
+/* The iframe stretches perfectly to fill the container */
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-info {
+    grid-area: contact-info;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px; 
+}
+.copyright {
+    grid-area: copyright;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+  /* This is what a standard CSS comment looks like */
+  /* align-items: baseline; Ajusta hacia abajo los elementos del logo */
+
+  /* This is what a standard CSS comment looks like */
+
+    /* Estilos para dispositivos móviles */
+       
+
+    /* Estilos para dispositivos de escritorio */
+        
